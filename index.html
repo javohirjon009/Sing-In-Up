@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByTrend Registration</title>
+    <link rel="stylesheet" href="./style/style1.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="./img/logo (3).png" alt="ByTrend Logo" class="logo">
+            <nav>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contacts</a>
+                <a href="#">Log in</a>
+                <a href="#" class="highlight">Open an account</a>
+                <button class="lang-switch">EN</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <img src="./img/logo (3).png" alt="ByTrend Logo" class="form-logo">
+            <h1>Welcome to ByTrend!</h1>
+            <p>Already have an account? <a href="#" class="login-link">Log in</a></p>
+
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First name*</label>
+                        <input type="text" id="firstName" placeholder="Alexander" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last name*</label>
+                        <input type="text" id="lastName" placeholder="Your Surname" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthDate">Birth date*</label>
+                    <input type="date" id="birthDate" required placeholder="07.05.2009">
+                </div>
+
+                <div class="form-group">
+                    <label>Gender*</label>
+                    <div class="radio-group">
+                        <div class="ora">
+                            <input type="radio" id="female" name="gender" value="female" checked>
+                            <label for="female" class="female">Female</label>
+                        </div>
+                        <div class="orab">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male" class="male">Male</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="skype">Skype</label>
+                    <input type="text" id="skype" placeholder="Your login Skype" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Promo</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Continue</button>
+            </form>
+        </div>
+    </main>
+    <button class="button"><a href="./pages/pages2.html" class="button-a">Ikkinchi sahifa</a></button>
+</body>
+
+</html>

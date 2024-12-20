@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style2.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="../img/logo (3).png" alt="ByTrend Logo" class="logo">
+            <nav>
+                <a href="#">Services</a>
+                <a href="#">About</a>
+                <a href="#">Contacts</a>
+                <a href="#">Log in</a>
+                <a href="#" class="highlight">Open an account</a>
+                <button class="lang-switch">EN</button>
+            </nav>
+        </div>
+    </header>
+    <div class="form-container">
+        <img src="../img/logo (3).png" alt="ByTrend Logo" class="form-logo">
+        <h1>Welcome to ByTrend!</h1>
+        <p>Already have an account? <a href="#" class="login-link">Log in</a></p>
+
+        <div class="form-group">
+            <label for="Email">Email*</label>
+            <input type="email" id="Email" placeholder="Email address" required>
+        </div>
+
+        <label for="password">Password<span>*</span></label>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="**********" required>
+            <span class="toggle-password">👁️</span>
+        </div>
+
+        <button type="submit" class="submit-btn">Continue</button>
+    </div>
+    <button class="button"><a href="../index.html" class="button-a">Birinchi sahifa</a></button>
+    <script>
+        const togglePassword = document.querySelector('.toggle-password');
+        const passwordInput = document.getElementById('password');
+
+        togglePassword.addEventListener('click', () => {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            togglePassword.textContent = type === 'password' ? '👁️' : '🙈';
+        });
+    </script>
+</body>
+
+</html>
